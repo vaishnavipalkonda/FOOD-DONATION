@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylefeed9.css">
+    <link rel="stylesheet" href="stylefeed8.css">
+    <style>
+        html{
+            font-size: 10px;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: 100%;
+            display: block;
+        }
+        body {
+            background-image: url(https://th.bing.com/th?q=Solid+Light+Gray+PowerPoint+Background&dc=2&w=100&h=100&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247);
+            box-sizing: border-box;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: top center;
+            background-position-x: center;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+            font-weight: 300;
+        }
+        #page {
+            position: relative;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+        .navs
+        {
+            box-shadow: 0px 14px 13px -9px rgb(0 0 0 / 9%);
+            background-color: #FFFFFF;
+        }
+        .fh5co-nav {
+            position: fixed;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            padding: 0;
+            z-index: 1001;
+            height: 65px;
+        }
+        nav{
+            display: block;
+            background-color: #ccc;
+        }
+        .fh5co-nav .top-menu {
+            padding: 20px 0;
+        }
+        div{
+            display: block;
+        }
+        @media (min-width: 992px){
+            .container {
+                width: 970px;
+            }
+        }
+        
+        .fh5co-nav #fh5co-logo img {
+            margin-top:-18px;
+            height:85px;
+        }
+        .fh5co-nav a {
+            padding: 5px 10px;
+            color: #fff;
+        }
+        .fh5co-nav ul {
+            padding: 0;
+            margin: 0px 0 0 0;
+        }
+        .fh5co-nav ul li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: inline;
+        }
+        .fh5co-nav ul li a {
+            font-size: 16px;
+            padding: 10px 10px;
+            color: #333;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+            text-transform:none;
+            font-family: 'Playfair Display', serif;
+        }
+        .fh5co-nav .active {
+            border-bottom:1px solid #ccc;
+            color:#eea70c;
+            font-weight:600;
+        }
+        .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
+            border-bottom:1px solid #ccc;
+            color:#eea70c;
+            font-weight:600;
+        }
+  
+        .fh5co-nav ul li.active > a {
+            color: #fff !important;
+        }
+  
+        .container {
+           margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        row:before, .row:after {
+            content: " ";
+            display: table;
+        }
+        .row:after {
+            clear: both;
+        }
+        .col-xs-2{
+            width: 16.66667%;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .col-xs-8{
+            width: 66.66667%;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            list-style: none;
+        }
+
+        .fh5co-nav .active {
+            border-bottom: 1px solid #ccc;
+            color: #eea70c;
+            font-weight: 600;
+        }
+        
+        .text-left{
+            text-align: left;
+        }
+        .text-right{
+            text-align: right;
+        }
+        
+        [class^="icon-heart2"], [class*=" icon-heart2"] {
+            font-family: 'icomoon' !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .fh5co-nav ul li .btn-cta a{
+            padding: 0px 0px !important;
+            color: ea70c;
+            font-size: 18px;
+            letter-spacing: 0px;
+        }
+        
+        
+        .fh5co-navul li{
+            display: inline-block;
+        }
+        a{
+            transition: 0.5s;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        a:-webkit-ant-link{
+            cursor: pointer;
+        }
+        .btn{
+            background-color: eea70c;
+            height: 30px;
+            width: 100px;
+            border-radius: 7px;
+
+        }
+        .btn{
+            background-color: #eea70c;
+        }
+        .btn:hover{
+            background-color: #ee410c;
+        }
+        .fh5co-footer{
+            clear: both;
+            background-position:relative;
+            padding: 5em 0 3em 0;
+            background: linear-gradient(to bottom left, #eea70c, #d5430a);
+            font-size: 12px;
+            line-height: 20px;
+            color: black;
+            width: 100%;
+        }
+        footer{
+            display: block;
+            width: 100%;
+        }
+        footer .row{
+            max-width: 1264px;
+            width: 100%;
+            margin: 0 auto;
+            padding: var(--su32) var(--su12) var(--su12) var(--su12);
+            flex-flow: row wrap;
+        }
+        #about-section {
+            padding: 6em 0;
+            clear: both;
+            margin-top:20px;
+
+        }
+        @media screen and (max-width: 768px) {
+            #about-section {
+                padding: 3em 0;
+                margin-top:80px;
+            }
+        }
+        #about-section h3 {
+            margin: 90px 0 0px 0;
+            padding: 0px;
+            font-weight: 600;
+            font-size: 62px;
+            color: #333;
+            line-height:68px;
+            font-family: 'Playfair Display', serif;
+        }
+
+       @media screen and (max-width: 768px) {
+        #about-section h3 {
+            margin: 30px 0 0px 0;
+            padding: 0px;
+            font-weight: 600;
+            font-size: 25px;
+            color: #333;
+            line-height:35px;
+            font-family: 'Playfair Display', serif
+        }
+        }
+        .cms {
+            margin-bottom: 30px;
+        }
+        .mtop-100 {
+            margin-top: 30px;
+        }
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+    <nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html"><img src="logo11.png" alt="Feed India, " width="100px"></a></div>
+					</div>
+					<div class="col-xs-8 text-left menu-1">
+						<ul>
+							<li><a href="index.html" target="_blank" class="active">Home</a></li>
+							<li><a href="about-us.html" target="_blank">About Us</a></li>
+							<li><a href="collab.html" target="_blank">Collaborate with us</a></li>
+							<li><a href="need-food.html" target="_blank">Need Food</a></li>
+							<li><a href="faqs.html" target="_blank">FAQs</a></li>
+							<li><a href="contact.html" target="_blank">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-2 text-right menu-1">
+						<button class="btn">
+                            <a href="https://www.jotform.com/assign/222134149858460/202672557553056">
+                            Donate </a>
+                        </button>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+    <div id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-md-offset-0 col-xs-12 col-xs-offset-0 text-left">
+				
+				
+							<div class="cms">
+								<h3>About us</h3>
+							
+							</div>
+				 <h4>Every day, millions sleep on an empty stomach. Help us fill them up</h4>
+							
+							
+							<p>Food is a basic right. And yet, over 190 million people in India do not have food to eat. And thousands of others do not have access to tasty wholesome meals.</p>
+<p>The COVID19 pandemic has intensified this situation by pushing millions of people into poverty.</p>
+
+					<h4>Our Mission:  End hunger</h4>
+<p>A nutritious meal is not something anyone should be denied of. Freedom from hunger is the first step towards empowerment. We believe that no one should have to worry about how to put food on the table. </p>
+<p>FEED INDIA aims to contribute towards solving Karnataka’s food crisis. </p>
+<p>Our volunteers are dedicated to providing cooked meals to those who in need. Our goal is to ensure that no one sleeps hungry, and everyone has access to a healthy meal. </p>
+<p>Backed by the Arya Ved Trust, along with other corporate partners, the FEED INDIA program is already serving tasty, healthy meals to thousands of people across Karnataka. </p>
+<p>We feed:  </p>	
+<p><img src="logo11.png" class="img-responsive" width="100px">
+				
+</div>
+
+				<div class="col-md-5 col-md-offset-0 col-xs-12 col-xs-offset-0">
+				<img src="https://img.freepik.com/free-photo/front-view-female-volunteer-holding-food-donation-box_23-2148637942.jpg?w=2000" class="img-responsive mtop-100" width="100%" height="100%">
+				
+			  </div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+    <br>
+    <br>
+    <br>
+    <footer role="contentinfo" class="fh5co-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 footer-box">
+                    
+                    <img src="logo11.png" class="img-responsive" alt="Feed India" width="100px">
+                
+                         <p style="font-size: 15px;">We aims to contribute towards solving FOOD CRISIS and FOOD WASTAGE.
+Copyrights © kkkk
+<br>
+Designed by <a href="https://www.webkraze.in" target="_blank" style="color:#066c3d">KKKK</a></p>	
+                </div>
+                 
+                <div class="col-md-2 col-sm-6 footer-box">
+                    <ul class="fh5co-footer-links">
+                        <li style="font-size: 15px; color: #ccc;"><a href="index.html" target="_blank">Home</a></li>
+                        <li style="font-size: 15px; color: #ccc;"><a href="about-us.html" target="_blank">About Us</a></li>
+                        <li style="font-size: 15px; color: #ccc;"><a href="collab.html" target="_blank">Collaborate with us</a></li>
+                        <li style="font-size: 15px; color: #ccc;"><a href="need-food.html" target="_blank">Need Food</a></li>
+                        <li style="font-size: 15px; color: #ccc;"><a href="faqs.html" target="_blank">FAQs</a></li>
+                        <li style="font-size: 15px; color: #ccc;"><a href="contact.html" target="_blank">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 footer-box">
+                    <h3 class="fh5co-footer-heading">Do you have questions? Call or email us.</h3>
+                    <ul class="fh5co-footer-links">
+                        <li style="font-size: 15px; color: #ccc;"><a href="contact-us">+91 8179081158</a></li>
+                        <li style="font-size: 15px; color: #ccc;"><a href="contact-us">support@devourup.org.in</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
